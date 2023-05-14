@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee; http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>servlet_prj</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+     <servlet-name>hell</servlet-name>
+     <servlet-class>day0426.HelloServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>hell</servlet-name>
+     <url-pattern>/hello</url-pattern>
+   </servlet-mapping>
+   
+  <servlet>
+     <servlet-name>lc</servlet-name>
+     <servlet-class>day0426.LifeCycle</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>lc</servlet-name>
+     <url-pattern>/lifecycle</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+     <servlet-name>pt</servlet-name>
+     <servlet-class>day0427.ParamTest</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>pt</servlet-name>
+     <url-pattern>/param_test</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+     <servlet-name>fs</servlet-name>
+     <servlet-class>day0427.ForwardServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>fs</servlet-name>
+     <url-pattern>/forward_servlet</url-pattern>
+  </servlet-mapping>
+  
+      <servlet>
+     <servlet-name>rs</servlet-name>
+     <servlet-class>day0427.RedirectServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>rs</servlet-name>
+     <url-pattern>/redirect_servlet</url-pattern>
+  </servlet-mapping>
+  
+  
+        <servlet>
+     <servlet-name>ss</servlet-name>
+     <servlet-class>day0427.SetSession</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>ss</servlet-name>
+     <url-pattern>/set_session</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+     <servlet-name>rm_session</servlet-name>
+     <servlet-class>day0427.RemoveSession</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>rm_session</servlet-name>
+     <url-pattern>/remove_session</url-pattern>
+  </servlet-mapping>
+  
+  
+     <servlet>
+     <servlet-name>read_cookie</servlet-name>
+     <servlet-class>day0428.ReadCookie</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>read_cookie</servlet-name>
+     <url-pattern>/read_cookie</url-pattern>
+  </servlet-mapping>
+  
+  
+     <servlet>
+     <servlet-name>add_cookie</servlet-name>
+     <servlet-class>day0428.AddCookie</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>add_cookie</servlet-name>
+     <url-pattern>/add_cookie</url-pattern>
+  </servlet-mapping>
+  
+  
+   <servlet>
+     <servlet-name>use_init_param</servlet-name>
+     <servlet-class>day0428.UseInitParam</servlet-class>
+     <init-param>
+     <param-name>name</param-name>
+     <param-value>윤상준</param-value>
+     </init-param>
+     <init-param>
+     <param-name>age</param-name>
+     <param-value>25</param-value>
+     </init-param>
+     <init-param>
+     <param-name>addr</param-name>
+     <param-value>서울시 강남구 역삼동</param-value>
+     </init-param>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>use_init_param</servlet-name>
+     <url-pattern>/use_init_param</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+     <servlet-name>use_init_param2</servlet-name>
+     <servlet-class>day0428.UseInitParam2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>use_init_param2</servlet-name>
+     <url-pattern>/use_init_param2</url-pattern>
+  </servlet-mapping>
+  
+  
+   <servlet>
+     <servlet-name>use_context_param</servlet-name>
+     <servlet-class>day0428.UseContextParam</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>use_context_param</servlet-name>
+     <url-pattern>/use_context_param</url-pattern>
+  </servlet-mapping>
+  
+
+    <context-param>
+  <param-name>protocol</param-name>
+  <param-value>http://</param-value>
+  </context-param>
+  
+  <context-param>
+  <param-name>domain</param-name>
+  <param-value>211.63.89.149/</param-value>
+  </context-param>
+  
+  <context-param>
+  <param-name>context_path</param-name>
+  <param-value>servlet_prj/</param-value>
+  </context-param>
+  
+  
+</web-app>
